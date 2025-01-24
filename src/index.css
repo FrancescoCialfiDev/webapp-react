@@ -4,3 +4,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* HEADER COMPONENT */
+header {
+  height: 100px;
+  background-color: rgb(18, 19, 19) !important;
+}
+
+header li:hover {
+  background-color: #2c9fdd !important;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+header form > button {
+  color: #2c9fdd !important;
+  border: 1px solid #2c9fdd !important;
+}
+
+header form > button:hover {
+  color: white !important;
+  background-color: #2c9fdd !important;
+}
+
+/* MAIN */
+main {
+  height: calc(100vh - 200px) !important;
+  width: 100%;
+  -webkit-box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
+}
+
+/* SIDEBAR */
+#sideBar {
+  height: calc(100vh - 200px) !important;
+  width: 250px;
+  background-color: rgb(18, 19, 19) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2c9fdd;
+}
+
+/* FOOTER */
+footer {
+  height: 100px;
+  background-color: rgb(18, 19, 19) !important;
+}
