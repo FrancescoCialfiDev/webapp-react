@@ -10,9 +10,9 @@ export const HeaderComponent = () => {
                     <img src="../../logo.png" alt="Logo" />
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 p-2">
-                            <li className="nav-item m-1"><Link to="/" className="nav-link active text-white" href="#">Home</Link></li>
-                            <li className="nav-item m-1"><Link to="/contact" className="nav-link text-white" href="#">Contact</Link></li>
-                            <li className="nav-item m-1"><Link to="/aboutus" className="nav-link text-white" href="#">About Us</Link></li>
+                            <li className="nav-item m-1"><Link to="/" className="nav-link active text-white">Home</Link></li>
+                            <li className="nav-item m-1"><Link to="/contact" className="nav-link text-white">Contact</Link></li>
+                            <li className="nav-item m-1"><Link to="/aboutus" className="nav-link text-white">About Us</Link></li>
                         </ul>
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
