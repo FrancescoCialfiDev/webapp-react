@@ -1,19 +1,26 @@
-import { HeaderComponent } from "./components/HeaderComponent"; // Importiamo HeaderComponent
-import { MainComponent } from "./components/MainComponent"; // Importiamo MainComponent
-import { FooterComponent } from "./components/FooterComponent"; // Importiamo FooterComponent
-import { SidebarComponent } from "./components/SidebarComponent"; // Importiamo SidebarComponent
+import { DefaultLayout } from "./layout/DefaultLayout"; // Importiamo DefaultLayout "./layout/DefaultLayout"
+import { HomePage } from "./pages/HomePage"; // Importiamo MainComponent da "./components/MainComponent"
+import { ContactPage } from "./pages/ContactPage"; // Importiamo ContactPage da "./pages/ContactPage"
+import { AboutUsPage } from "./pages/AboutUsPage"; // Importiamo AboutUsPage da "./pages/AboutUsPage"
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Importiamo BrowserRouter, Routes, Route da "react-router-dom" dopo averlo installato
 
-function App() {
+const App = () => {
     return (
         <>
-            <HeaderComponent />
-            <div className="d-flex">
-                <SidebarComponent />
-                <MainComponent />
-            </div>
-            <FooterComponent />
+
+            <BrowserRouter>                                                      {/* Routing React formato da "BrowserRouter, Routes, Route" */}
+                <Routes>
+                    <Route element={<DefaultLayout />}>                          {/* Layout di default per tutte le rotte */}
+
+                        <Route index element={<HomePage />} />     {/* ROTTA MOVIES HOME PAGE */}
+                        <Route path="/contact" element={<ContactPage />} />    {/* ROTTA CONTATTI */}
+                        <Route path="/AboutUs" element={<AboutUsPage />} />    {/* ROTTA INFORMAZIONI */}
+
+                    </ Route>
+                </Routes>
+            </BrowserRouter >
         </>
     );
 }
 
-export default App;
+export default App; // Esportiamo App e lo importiamo su "main.jsx"
