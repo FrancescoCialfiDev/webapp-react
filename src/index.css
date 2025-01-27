@@ -100,3 +100,7 @@ footer {
 #overlay {
   height: 100%;
 }
+
+.btn-close {
+  background-color: aliceblue;
+}
