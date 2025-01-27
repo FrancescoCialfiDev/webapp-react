@@ -10,7 +10,7 @@ export const CardComponent = ({ data }) => {
                 <img src={data.image} className=" img-fluid position-relative top-0 left-0 rounded-2" alt="..." />
                 <div id="overlay" className="card-body position-absolute top-0 left-0 d-none">
                     <h5 className="card-title text-white">{data.title}</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+                    <p className="card-text">{data.abstract}</p>
                     <Link to={`/${data.id}`} href="#" className="btn btn-primary">Go somewhere</Link >
                 </div>
             </div>

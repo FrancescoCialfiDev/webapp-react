@@ -1,4 +1,4 @@
-import { CardComponent } from "../components/CardComponent"
+import { CardComponent } from "../components/common/CardComponent"
 import { GlobalContext } from "../context/GlobalContext"
 import { useContext } from "react"
 

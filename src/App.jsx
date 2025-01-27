@@ -19,7 +19,7 @@ const App = () => {
                                 <Route path=":id" element={<MovieDetailsPage />} />  {/* SOTTO ROTTA CON ID DINAMICO */}
                             </Route>
 
-                            <Route path="/contact" element={<ContactPage />} />      {/* ROTTA CONTATTI */}
+                            <Route path="/contacts" element={<ContactPage />} />      {/* ROTTA CONTATTI */}
                             <Route path="/AboutUs" element={<AboutUsPage />} />      {/* ROTTA INFORMAZIONI */}
 
                         </ Route>
