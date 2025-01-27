@@ -11,14 +11,14 @@ const App = () => {
         <GlobalProvider>
             <BrowserRouter>
                 <Routes>
-                    {/* Default Layout applied to nested routes */}
-                    <Route element={<DefaultLayout />}>
-                        {/* HomePage and dynamic movie details */}
-                        <Route path="/" element={<HomePage />} />
+
+                    <Route element={<DefaultLayout />}>                           {/* Default Layout */}
+
+                        <Route path="/" element={<HomePage />} />                 {/* HomePage and dynamic movie details */}
                         <Route path="/:id" element={<MovieDetailsPage />} />
 
-                        {/* Contact and About Us Pages */}
-                        <Route path="/contacts" element={<ContactPage />} />
+
+                        <Route path="/contacts" element={<ContactPage />} />      {/* Contact and About Us Pages */}
                         <Route path="/about-us" element={<AboutUsPage />} />
                     </Route>
                 </Routes>
