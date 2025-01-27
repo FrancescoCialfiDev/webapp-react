@@ -11,23 +11,20 @@ body {
   height: 100vh;
 }
 
-/* HEADER COMPONENT */
+/* HEADER */
 header {
   height: 100px;
   background-color: rgb(18, 19, 19) !important;
 }
-
 header li:hover {
   background-color: #2c9fdd !important;
   border-radius: 10px;
   transition: 0.5s;
 }
-
 header form > button {
   color: #2c9fdd !important;
   border: 1px solid #2c9fdd !important;
 }
-
 header form > button:hover {
   color: white !important;
   background-color: #2c9fdd !important;
@@ -39,12 +36,21 @@ main {
   overflow-y: scroll;
   height: calc(100vh - 200px) !important;
   width: 100%;
-  -webkit-box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 0px 47px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 47px -8px rgba(0, 0, 0, 0.75);
 }
 ::-webkit-scrollbar {
   display: none;
+}
+main img {
+  height: 300px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+main .card:hover #overlay {
+  display: block !important;
+  cursor: pointer !important;
+  background-color: rgba(22, 22, 22, 0.932) !important;
+  opacity: 1;
 }
 
 /* SIDEBAR */
@@ -53,7 +59,6 @@ main {
   width: 250px;
   background-color: rgb(18, 19, 19) !important;
 }
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #2c9fdd;
@@ -65,29 +70,19 @@ footer {
   background-color: rgb(18, 19, 19) !important;
 }
 
-main img {
-  height: 300px !important;
-  width: 100% !important;
-  object-fit: cover !important;
-}
-
+/* CARD */
 .card {
   border: 0;
   background-color: transparent;
-  -webkit-box-shadow: 1px 11px 14px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 11px 14px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 11px 14px -10px rgba(0, 0, 0, 0.75);
   transform: scale(0.98);
+  transition: 1s;
 }
 .card:hover {
   transform: scale(1);
-  -webkit-box-shadow: 1px 11px 20px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 11px 20px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 11px 20px 2px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  transition: 1s;
 }
-
 .card p {
   font-size: 14px;
   height: 180px;
@@ -95,17 +90,13 @@ main img {
   margin: 0;
 }
 
+/* DETAILS */
 #details {
   height: 300px;
   background-color: rgb(18, 19, 19);
 }
 
+/* OVERLAY */
 #overlay {
   height: 100%;
-}
-main .card:hover #overlay {
-  display: block !important;
-  cursor: pointer !important;
-  background-color: rgba(22, 22, 22, 0.932) !important;
-  opacity: 1;
 }

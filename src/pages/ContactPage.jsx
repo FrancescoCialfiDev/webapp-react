@@ -11,7 +11,7 @@ export const ContactPage = () => {
     return (
 
         <main className="bg-dark p-5">
-            <h1 className="text-white mb-4 mt-4">Lista Contatti</h1>
+            <h1 className="text-white mb-4 mt-4">Contacts</h1>
             <div className="list-group">
                 {contacts.map((contact, index) => (
                     <div

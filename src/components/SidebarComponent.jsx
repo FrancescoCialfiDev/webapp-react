@@ -25,9 +25,9 @@ export const SidebarComponent = () => {
                     </Link>
                 </li>
 
-                <li>       {/* Terzo pulsante */}
+                <li>       {/* Secondo pulsante */}
                     <Link
-                        to="/aboutus"
+                        to="/about-us"
                         id="bottone3"
                         onClick={takeId}
                         className={` ${active === "bottone3" ? "active" : ""} nav-link text-white`}>
@@ -35,7 +35,7 @@ export const SidebarComponent = () => {
                     </Link>
                 </li>
 
-                <li>       {/* Quinto pulsante */}
+                <li>       {/* Terzo pulsante */}
                     <Link
                         to="/contacts"
                         id="bottone5"
@@ -45,7 +45,7 @@ export const SidebarComponent = () => {
                     </Link>
                 </li>
 
-                <li>       {/* Secondo pulsante */}
+                <li>       {/* Quarto pulsante */}
                     <Link
                         id="bottone2"
                         onClick={takeId}
@@ -54,7 +54,7 @@ export const SidebarComponent = () => {
                     </Link>
                 </li>
 
-                <li>       {/* Quarto pulsante */}
+                <li>       {/* Quinto pulsante */}
                     <Link
                         id="bottone4"
                         onClick={takeId}
