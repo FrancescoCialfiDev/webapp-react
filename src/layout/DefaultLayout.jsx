@@ -8,12 +8,18 @@ export const DefaultLayout = () => {
     return (
 
         <>
-            <HeaderComponent />
+
+            <HeaderComponent />                   {/* Componente Header */}
+
             <div className="d-flex">
-                <SidebarComponent />
-                <Outlet />
+                <SidebarComponent />              {/* Componente SideBar */}
+                <main className="bg-dark">
+                    <Outlet />                    {/* Componente Outlet */}
+                </main>
             </div>
-            <FooterComponent />
+
+            <FooterComponent />                   {/* Componente Footer */}
+
         </>
 
     )
