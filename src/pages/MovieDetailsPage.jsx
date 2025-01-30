@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
 import { CardComponent } from "../components/common/CardComponent";
 import ReviewComponent from "../components/common/ReviewComponent";
+import { SiAxios } from "react-icons/si";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
@@ -18,12 +19,16 @@ export const MovieDetailsPage = () => {
             });
     };
 
+
+
+
+
     console.log(singleMovie);
 
     useEffect(getSingleMovie, [id]);
 
     return (
-        <main className="bg-dark">
+        <main className="bg-dark btn ">
             <div className="container">
 
                 <h2>Movie Details</h2>

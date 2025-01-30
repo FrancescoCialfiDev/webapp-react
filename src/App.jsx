@@ -20,7 +20,9 @@ const App = () => {
 
                         <Route path="/contacts" element={<ContactPage />} />      {/* Contact and About Us Pages */}
                         <Route path="/about-us" element={<AboutUsPage />} />
+
                     </Route>
+
                 </Routes>
             </BrowserRouter>
         </GlobalProvider>
